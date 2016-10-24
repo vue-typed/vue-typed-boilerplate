@@ -1,0 +1,37 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "A Vue-Typed project"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "private": {
+      "type": "boolean",
+      "default": true
+    },
+    "port": {
+      "type": "string",
+      "required": true,
+      "label": "Dev server port",
+      "default": "8080"
+    },
+    "vueVersion": {
+      "type": "list",
+      "required": true,
+      "message": "What Vue version do you want to use?",
+      "choices": [ "1.0", "2.0" ],
+      "default": "2.0"
+    }
+  },
+	"completeMessage": "Congratulations! {{ name }} project generated."  
+}
