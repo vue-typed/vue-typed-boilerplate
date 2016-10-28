@@ -1,36 +1,53 @@
 # vue-typed-boilerplate
 
-> A simple setup typescript project for [vue-typed](https://github.com/budiadiono/vue-typed).
+> A simple setup to build [vue](vuejs.org) application in [typescript](typescriptlang.org) with [vue-typed](https://github.com/budiadiono/vue-typed).
+
 
 ### Usage
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+1. This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). Please install first if you don't have it yet.
 
-``` bash
-$ npm install -g vue-cli
-$ vue init budiadiono/vue-typed-boilerplate my-project
-$ cd my-project
-$ npm install
-$ npm run dev
-```
+	``` bash
+	$ npm install -g vue-cli
+	```
 
-### Getting started
+2. Execute command bellow, which is `my-project` is the name of your project. [vue-cli](https://github.com/vuejs/vue-cli) will creates a folder with this name for your new project.
 
-You'll put all your typescript source code under `src` folder where the main app code is on `index.ts` (already created by boilerplate). 
-This boilerplate created example 2 files for you:
+	``` bash
+	$ vue init vue-typed/vue-typed-boilerplate my-project
+	```
 
-- `src\index.ts`: example main app 
+3. Just go ahead on build!
 
-- `src\container.ts`: example component 
+	```
+	$ cd my-project
+	$ npm install
+	$ npm start
+	```
 
 
 ### What's Included
 
-- `npm run dev`: Webpack + `vue` + `vue-typed` with proper config for source maps & hot-reload.
+#### NPM Commands
 
-- `npm run build`: Production build with HTML/CSS/JS minification. Generated files will be located under `dist` folder.
+- `npm run start` or `npm start`: **webpack** + **vue** + **vue-typed** with proper config for source maps & hot-reload.
 
-For detailed explanation on how things work, consult the [docs for vue-typed](https://github.com/budiadiono/vue-typed).
+- `npm run build`: a production build with `HTML`/`CSS`/`JS` minification. Generated files will be located under `dist` folder.
+
+#### Start Coding
+
+You'll put all your app code under `src` folder where the entry point file is `index.ts` (already created by this boilerplate). 
+
+This boilerplate created 3 example application files for you:
+
+- `index.html`: main page
+
+- `src\index.ts`: app entry point 
+
+- `src\container.ts`: example component 
+
+For detailed explanation on how things work, consult the [docs](https://github.com/vue-typed/vue-typed) for **vue-typed**.
+
 
 ### Fork It And Make Your Own
 
