@@ -9,7 +9,7 @@
 npm install
 
 # serve with hot reload at localhost:{{port}}
-npm run dev
+npm start
 
 # build for production
 npm run build
