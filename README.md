@@ -17,7 +17,7 @@
 	$ vue init vue-typed/vue-typed-boilerplate my-project
 	```
 
-3. Just go ahead on build!
+3. Just go ahead and build!
 
 	```
 	$ cd my-project
