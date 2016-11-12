@@ -5,6 +5,11 @@
         "noImplicitAny": false,
         "sourceMap": false,
         "experimentalDecorators": true,
+        {{#if_eq vueVersion "1.0"}}
+        "types": ["node", "vue"]
+        {{/if_eq}}
+        {{#if_eq vueVersion "2.0"}}
         "types": ["node"]
+        {{/if_eq}}
     }
 }
