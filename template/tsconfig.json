@@ -1,7 +1,13 @@
 {
     "compilerOptions": {
+        {{#if_eq vueVersion "1.0"}}
         "module": "commonjs",
-        "target": "es6",
+        {{/if_eq}}
+        {{#if_eq vueVersion "2.0"}}
+        "module": "es2015",
+        "moduleResolution": "node",
+        {{/if_eq}}
+        "target": "es5",
         "noImplicitAny": false,
         "sourceMap": true,
         "experimentalDecorators": true,
@@ -9,7 +15,12 @@
         "types": ["node", "vue"]
         {{/if_eq}}
         {{#if_eq vueVersion "2.0"}}
-        "types": ["node"]
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "dom",
+            "es5",
+            "es2015.promise"
+        ]
         {{/if_eq}}
     }
 }

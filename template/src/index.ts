@@ -1,5 +1,5 @@
+import Vue from 'vue'
 import { Component } from 'vue-typed'
-import * as Vue from 'vue'
 import { Container } from './container'
 
 Vue.component('app-container', Container)
